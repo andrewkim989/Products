@@ -1,0 +1,12 @@
+<div id = "productnew">
+  <h3>Create a new product</h3><br>
+
+  <form (submit) = "createProduct()">
+    Name: <input type = "text" name = "name" [(ngModel)] = "newProduct.name"/>
+    Description: <input type = "text" name = "description" [(ngModel)] = "newProduct.description"/>
+    Price: <input type = "number" name = "price" step = "0.01" [(ngModel)] = "newProduct.price"/>
+    Quantity: <input type = "number" name = "quantity" [(ngModel)] = "newProduct.quantity"/>
+
+    <input type = "submit" value = "Create Product" class = "btn btn-info"/>
+  </form>
+</div>
